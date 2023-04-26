@@ -1,5 +1,7 @@
 package edu.kh.comm.member.controller;
 
+import java.util.List;
+
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -28,7 +30,7 @@ import edu.kh.comm.member.model.vo.Member;
 // --> IOC(제어의 역전, 객체 생명주기를 스프링이 관리)를 이용하여 객체 생성
 // ** 이 때, 스프링이 생성한 객체를 bean 이라고 한다. ** 
 
-// bean 등록 == 스플링이 객체로 만들어서 가지고 있어라
+// bean 등록 == 스프링이 객체로 만들어서 가지고 있어라
 
 // @Component // 해당 클래스를 bean으로 등록하라고 프로그램에게 알려주는 주석 (Annotation)
 
@@ -296,6 +298,14 @@ public class MemberController {
 	public Member selectOneMember(Member inputMember) {
 		
 		return service.selectOneMember(inputMember);
+	}
+	
+	// 회원 목록 조회
+	@ResponseBody
+	@RequestMapping("/selectAll")
+	public List selectAll() {
+		
+		return service.selectAll();
 	}
 	
 	

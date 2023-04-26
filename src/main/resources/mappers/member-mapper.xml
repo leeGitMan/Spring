@@ -156,7 +156,7 @@
 	   </select>
 	   
 	   
-	   <select id="signUp" parameterType="member" resultType="_int">
+	   <insert id="signUp" parameterType="member" >
 	   		INSERT INTO MEMBER_S VALUES(
 			SEQ_MEMBER_NO_S.NEXTVAL,
 			#{memberEmail},
@@ -166,13 +166,19 @@
 			#{memberAddress},
 			DEFAULT,DEFAULT,DEFAULT
 			)
-	   </select>
+	   </insert>
 	   
 	   
-	   <select id="selectMember" parameterType="member" resultType="member_rm">
+	   <select id="selectMember" parameterType="member" resultMap="member_rm">
 	   		SELECT MEMBER_EMAIL , MEMBER_NICK ,  MEMBER_TEL , MEMBER_ADDR , ENROLL_DT 
 			FROM MEMBER_S
 			WHERE MEMBER_EMAIL = #{memberEmail}
+	   </select>
+	   
+	   
+	   <select id="selectAll" resultMap="member_rm">
+	   		SELECT MEMBER_NO, MEMBER_EMAIL, MEMBER_NICK
+	   		FROM MEMBER_S
 	   </select>
 	  
 	  
