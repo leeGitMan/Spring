@@ -7,6 +7,7 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
      <title>KH 커뮤니티</title>
  
      <link rel="stylesheet" href="../resources/css/main-style.css">
@@ -125,18 +126,18 @@
                  </label>
                  
                  <div class="signUp-input-area">
-                     <input type="text" id="memberAddress" name="memberAddress"
+                     <input type="text" id="zipCode" name="memberAddress"
                              placeholder="우편번호" maxlength="6">
                      
-                     <button type="button">검색</button>
+                     <button onclick="findArr()" type="button">검색</button>
                  </div>
  
                  <div class="signUp-input-area">
-                     <input type="text" name="memberAddress" placeholder="도로명주소">
+                     <input type="text" name="memberAddress" id="memberAddress" placeholder="도로명주소">
                  </div>
  
                  <div class="signUp-input-area">
-                     <input type="text" name="memberAddress" placeholder="상세주소">
+                     <input type="text" name="memberAddress" id="detailAddress" placeholder="상세주소">
                  </div>
  
                  <button type="submit" id="signUp-btn">가입하기</button>
@@ -147,6 +148,12 @@
  
  
      </main>
+
+
+
+     
+
+    
  
     <!-- footer include -->
     <jsp:include page="/WEB-INF/views/common/footer.jsp" />

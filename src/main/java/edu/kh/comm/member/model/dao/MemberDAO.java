@@ -48,4 +48,28 @@ public class MemberDAO {
 		return loginMember;
 	}
 
+	/** 이메일 중복 검사 DAO
+	 * @param memberEmail
+	 * @return
+	 */
+	public int emailDupCheck(String memberEmail) {
+		// TODO Auto-generated method stub
+		return sqlSession.selectOne("memberMapper.emailDupCheck", memberEmail);
+	}
+
+	public int nickNameDup(String memberNickname) {
+		
+		
+		return sqlSession.selectOne("memberMapper.memberNickDupCheck", memberNickname);
+	}
+
+	public int signUpFinal(Member inputMember) {
+		return sqlSession.update("memberMapper.signUp", inputMember);
+	}
+
+	public Member selectOneMember(Member inputMember) {
+		Member selectMember = sqlSession.selectOne("memberMapper.selectMember", inputMember);
+		return selectMember;
+	}
+
 }

@@ -3,20 +3,17 @@ package edu.kh.comm.member.controller;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
@@ -247,6 +244,61 @@ public class MemberController {
 		
 		return "member/signUp";
 	}
+	
+	
+	// 이메일 중복 검사
+	@ResponseBody // 보통 ajax 응답 시, 사용
+	@GetMapping("/emailDupCheck")
+	public int emailDupCheck(/* 생략가능 @RequestParam("memberEmail")*/ String memberEmail) { // 파라미터 key값과 저장하려는 변수 명이 같으면 생략 가능
+		
+		int result = service.emailDupCheck(memberEmail);
+		
+		// 컨트롤러에서 반환 되는 값은 forward 또는 redirect를 위한 경로인 경우가 일반적
+		// -> 반환되는 값은 경로로 인식됨
+		
+		// -> 이를 해결 하기위한 어노테이션 @ResponseBody 가 존재함 
+		// @ResponseBody : 반환 되는 값을 응답의 몸통(body)에 추가하여
+		//					이전 요청 주소로 돌아감
+		// -> 컨트롤러에서 반환되는 값이 경로가 아닌 '값 자체'로 인식됨
+		return result;
+	}
+	
+	@ResponseBody
+	@GetMapping("/nicknameDupCheck")
+	public int nickNameDup(String memberNickname) {
+		
+		return service.nickNameDup(memberNickname);
+		
+	}
+	
+	// 회원 가입
+	@PostMapping("/signUp")
+	public String signUpFinal(Member inputMember, RedirectAttributes ra)  {
+		
+		int result = service.signUpFinal(inputMember);
+		
+		if(result > 0) {
+			ra.addFlashAttribute("msg", "회원 가입 완료!");
+			
+			return "redirect:/";
+			
+		}else {
+			ra.addFlashAttribute("msg", "회원 가입 실패!");
+			return "redirect:/";
+		}
+	}
+	
+	
+	
+	// 회원 정보 조회 ajax(selectOne)
+	@ResponseBody
+	@PostMapping("/selectOne")
+	public Member selectOneMember(Member inputMember) {
+		
+		return service.selectOneMember(inputMember);
+	}
+	
+	
 	
 	
 }
