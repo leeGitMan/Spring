@@ -11,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -308,6 +309,32 @@ public class MemberController {
 		return service.selectAll();
 	}
 	
+	
+	/*
+	 * 스프링 예외 처리 방법 (3가지, 중복 사용 가능)
+	 * 
+	 * 우선 순위
+	 * 1 순위 : 메서드 별로 예외처리 (try-catch / throws)
+	 * 
+	 * 2 순위 : 하나의 컨트롤러에서 발생하는 예외를 모아서 처리
+	 * 			-> @ExceptionHandler(메서드에 작성)
+	 * 
+	 * 3 순위 : 전역(웹 애플리케이션에서 발생하는 예외를 모아서 처리)
+	 * 			-> @ControllerAdvice (클래스에 작성)
+	 * 
+	 * */
+	
+	// 회원 컨트롤러에서 발생하는 모든 예외를 모아서 처리
+//	@ExceptionHandler(Exception.class) 
+//	public String exceptionHandler(Exception e, Model model) {
+//		e.printStackTrace();
+//		
+//		model.addAttribute("errorMessage", "서비스 이용 중 문제가 발생했습니다.");
+//		model.addAttribute("e" , e);
+//		
+//		return "common/error";
+//	}
+//	
 	
 	
 	
