@@ -68,7 +68,7 @@
                     <div class="myPage-row info-address">
                         <input type="text" name="updateAddress"  value="${addr[0]}"  maxlength="6">
 
-                        <button type="button" id="info-address-btn">검색</button>
+                        <button type="button" onclick="return execDaumPostcode()" id="info-address-btn">검색</button>
                     </div>
 
                     <div class="myPage-row info-address">
@@ -88,8 +88,13 @@
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp"/>
 
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
     <!-- myPage.js 추가 -->
     <script src="${contextPath}/resources/js/member/myPage.js"></script>
+
+    <!-- myPageAddress.js 추가 -->
+    <!-- <script src="${contextPath}/resources/js/member/myPageAddress.js"></script> -->
 
 </body>
 </html>

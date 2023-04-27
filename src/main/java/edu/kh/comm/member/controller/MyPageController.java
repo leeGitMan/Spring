@@ -107,13 +107,21 @@ public class MyPageController {
 	
 	// 회원정보 수정
 	@PostMapping("/info")
-	
-	public String updateInf(@ModelAttribute("loginMember") Member loginMember, 
+	public String updateInfo(@ModelAttribute("loginMember") Member loginMember, 
 							@RequestParam Map<String, Object> paramMap, // 요청 시 전달된 파라미터를 구분하지 않고 모두 Map에 담아서 얻어옴
 							String[] updateAddress,
 							RedirectAttributes ra) {
 		
+		int result = service.updateInfo(loginMember, paramMap);
 		
+		
+		if(result > 0) {
+			ra.addFlashAttribute("msge", "회원 정보 수정 완료");
+			return "redirect:/";
+		}else {
+			ra.addFlashAttribute("msge", "회원 정보 수정 실패");
+			return "redirect:info";
+		}
 		
 		// 필요한 값
 		// 닉네임
@@ -147,7 +155,7 @@ public class MyPageController {
 		// (필드명 겹쳐서 문제니깐 겹치지 않게 하자)
 		
 		
-		return "redirect:info";
+		
 	}
 	
 	

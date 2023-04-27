@@ -24,6 +24,12 @@
   		SET SECESSION_FL = 'Y'
   		WHERE MEMBER_NO = #{memberNo}
   </update>
+  
+  <update id="updateInfo" parameterType="member">
+	  	UPDATE MEMBER_S 
+	  	SET MEMBER_NICK = #{memberNickname}, MEMBER_TEL=#{memberTel}, MEMBER_ADDR=#{memberAddress}
+		WHERE MEMBER_NO = #{memberNo}
+  </update>
  
   
   	

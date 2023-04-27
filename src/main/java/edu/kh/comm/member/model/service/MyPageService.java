@@ -25,4 +25,6 @@ public interface MyPageService {
 	 */
 	int secession(Member loginMember, String pw);
 
+	int updateInfo(Member loginMember, Map<String, Object> paramMap);
+
 }

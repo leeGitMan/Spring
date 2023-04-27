@@ -71,6 +71,23 @@ public class MyPageServiceImpl implements MyPageService{
 		return result;
 	}
 
+
+
+	@Override
+	public int updateInfo(Member loginMember, Map<String, Object> paramMap) {
+		
+		// 맵안에 있는 값들을 로그인 멤버 안에 세팅해주기
+		
+		
+		loginMember.setMemberNickname((String) paramMap.get("updateNickname"));
+		loginMember.setMemberTel((String) paramMap.get("updateTel"));
+		loginMember.setMemberAddress((String) paramMap.get("updateAddress"));
+		
+		return dao.updateInfo(loginMember);
+		
+		
+	}
+
 	
 	
 	
