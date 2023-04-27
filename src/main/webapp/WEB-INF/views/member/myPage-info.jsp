@@ -47,12 +47,12 @@
 
                     <div class="myPage-row">
                         <label>닉네임</label>
-                        <input type="text" name="memberNickname"  id="memberNickname"  value="${loginMember.memberNickname}" maxlength="10">              
+                        <input type="text" name="updateNickname"  id="memberNickname"  value="${loginMember.memberNickname}" maxlength="10">              
                     </div>
 
                     <div class="myPage-row">
                         <label>전화번호</label>
-                        <input type="text" name="memberTel"  id="memberTel" value="${loginMember.memberTel}" maxlength="11">
+                        <input type="text" name="updateTel"  id="memberTel" value="${loginMember.memberTel}" maxlength="11">
                     </div>
                     
                     
@@ -66,17 +66,17 @@
                     </div>
 
                     <div class="myPage-row info-address">
-                        <input type="text" name="memberAddress"  value="${addr[0]}"  maxlength="6">
+                        <input type="text" name="updateAddress"  value="${addr[0]}"  maxlength="6">
 
                         <button type="button" id="info-address-btn">검색</button>
                     </div>
 
                     <div class="myPage-row info-address">
-                        <input type="text" name="memberAddress" value="${addr[1]}">
+                        <input type="text" name="updateAddress" value="${addr[1]}">
                     </div>
                     
                     <div class="myPage-row info-address">
-                        <input type="text" name="memberAddress" value="${addr[2]}">
+                        <input type="text" name="updateAddress" value="${addr[2]}">
                     </div>
 
                     <button id="info-update-btn">수정하기</button>

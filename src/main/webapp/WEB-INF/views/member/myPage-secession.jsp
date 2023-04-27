@@ -47,7 +47,7 @@
 
                     <div class="myPage-row">
                         <label>비밀번호</label>
-                        <input type="password" name="memberPw" id="memberPw" maxlength="30">              
+                        <input type="password" name="secessionPw" id="memberPw" maxlength="30">              
                     </div>
 
                     
