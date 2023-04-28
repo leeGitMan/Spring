@@ -24,29 +24,37 @@ public class MyPageServiceImpl implements MyPageService{
 	
 	@Autowired
 	private BCryptPasswordEncoder bcrypt;
-
+	
+	
+	
+	
+	
 	/**
 	 * 비밀번호 변경 서비스
 	 * @author lee
 	 */
 	@Override
-	public int changePw(String currentPw, String newPw, Member loginMember) {
+	public int changePassword(Map<String, Object> map) {
 		
-		int result = 0;
-		// 비번 변경을 위해서 현재 DB의 비번을 가져오기
-		String memberPw = dao.loginMemberNo(loginMember);
+		// DB상에 비번과 currentPw 가 맞는지 체크해야함
+		// DB상 비번 불러오기
+		String dbPw = dao.selectPw((int) map.get("memberNo"));
 		
-		if(bcrypt.matches(currentPw, memberPw)) { // DB에서 가져온 비번과 현재 입력한 비번 비교하기 (암호화로 인해 bcrypt matches로 비교)
-			String newPassword = bcrypt.encode(newPw); // 암호가 맞으면 새로운 비번 암호화해서 변수에 담아주기
-			loginMember.setMemberPw(newPassword); // 로그인 멤버 객체에 새로운 비번 세팅해주기
-			result = dao.changePw(loginMember); // 새로운 비번을 로그인 멤버 객체에 담아서 보내주기
+		
+		// 불러온 db비번과 currentPw 입력값이 맞는지 비교
+		if(bcrypt.matches((String) map.get("currentPw"), dbPw)) {
+			// true 일 때, newPw를 세팅
+			map.put("newPw", bcrypt.encode( (String)map.get("newPw")));
+			
+			
+			
+			return dao.changePw(map);
 		}else {
-			result = 0;
+			return 0;
 		}
-		return result;
+		
 	}
-	
-	
+
 
 	/** 
 	 * 회원 탈퇴 서비스
@@ -60,7 +68,7 @@ public class MyPageServiceImpl implements MyPageService{
 		
 		int result;
 		// 디비에서 가져온 비번 변수에 저장
-		String memberPw = dao.loginMemberNo(loginMember);
+		String memberPw = dao.selectPw(loginMember.getMemberNo());
 		
 		if(bcrypt.matches(pw, memberPw)) { // 디비 비번과 입력 비번 비교하기
 			result = dao.secession(loginMember); // 맞으면 로그인멤버 DAO로 넘기기
@@ -134,6 +142,10 @@ public class MyPageServiceImpl implements MyPageService{
 		}
 		return result;
 	}
+
+
+
+	
 
 	
 	

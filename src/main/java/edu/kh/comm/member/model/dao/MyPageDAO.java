@@ -19,26 +19,26 @@ public class MyPageDAO {
 
 	
 
-	/** DB 비번과 현재 입력한 비번을 비교하기위한 DAO
-	 * @param loginMember
+	
+	
+	/** DB 비밀번호 조회 DAO
+	 * @param memberNo 
 	 * @return
 	 */
-	public String loginMemberNo(Member loginMember) {
-		return sqlSession.selectOne("myPageMapper.selectNo", loginMember);
+	public String selectPw(int memberNo ) {
+		return sqlSession.selectOne("myPageMapper.selectPw", memberNo);
 	}
-
-
-
-	/** 새로운 비번을 DB에 세팅해주는 DAO
-	 * @param loginMember
+	
+	
+	/** 비밀번호 변경 DAO
+	 * @param map
 	 * @return
 	 */
-	public int changePw(Member loginMember) {
-		return sqlSession.update("myPageMapper.updatePw", loginMember);
+	public int changePw(Map<String, Object> map) {
+		return sqlSession.update("myPageMapper.changePw", map);
 	}
 
-
-
+	
 	/** 회원탈퇴 DAO
 	 * @param loginMember
 	 * @return
@@ -67,5 +67,15 @@ public class MyPageDAO {
 	public int updateProfile(Map<String, Object> map) {
 		return sqlSession.update("myPageMapper.updateProfile", map);
 	}
+
+
+	
+
+
+
+	
+
+
+	
 
 }

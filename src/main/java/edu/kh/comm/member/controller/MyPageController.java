@@ -71,20 +71,32 @@ public class MyPageController {
 	
 	// 비밀번호 변경 하기
 	@PostMapping("/changePw")
-	public String changePassword(@RequestParam("currentPw") String currentPw,
-								@RequestParam("newPw") String newPw,
-								@ModelAttribute("loginMember") Member loginMember,
+	public String changePassword(@ModelAttribute("loginMember") Member loginMember,
+								@RequestParam Map<String, Object> map,
 								RedirectAttributes ra) {
 		
-		int result = service.changePw(currentPw, newPw, loginMember);
+		// 맵 안에 멤버 넘버 넣어주고 멤버 파라미터로 넘기기
+		
+		map.put("memberNo", loginMember.getMemberNo());
+		
+		int result = service.changePassword(map);
+		
+		String message = null;
+		String path = null;
+		
 		
 		if(result > 0) {
-			ra.addFlashAttribute("msge", "비밀번호 변경 완료");
-			return "redirect:/";
+			message = "비밀번호 변경 성공!";
+			path = "redirect:/";
 		}else {
-			ra.addFlashAttribute("msge", "비밀번호 변경 실패");
-			return "redirect:info";
+			message = "비밀번호 변경 실패!";
+			path = "redirect:changePw";
 		}
+		
+		ra.addFlashAttribute("msge", message);
+		
+		return path;
+		
 	}
 	
 	
