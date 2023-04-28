@@ -66,17 +66,17 @@
                     </div>
 
                     <div class="myPage-row info-address">
-                        <input type="text" name="updateAddress"  value="${addr[0]}"  maxlength="6">
+                        <input type="text" name="updateAddress" id="postcode"  value="${addr[0]}"  maxlength="6">
 
                         <button type="button" onclick="return execDaumPostcode()" id="info-address-btn">검색</button>
                     </div>
 
                     <div class="myPage-row info-address">
-                        <input type="text" name="updateAddress" value="${addr[1]}">
+                        <input type="text" name="updateAddress" id="address" value="${addr[1]}">
                     </div>
                     
                     <div class="myPage-row info-address">
-                        <input type="text" name="updateAddress" value="${addr[2]}">
+                        <input type="text" name="updateAddress" id="detailAddress" value="${addr[2]}">
                     </div>
 
                     <button id="info-update-btn">수정하기</button>
@@ -87,6 +87,11 @@
     </main>
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp"/>
+
+    <%-- 다음 주소 API --%>
+    <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:11;-webkit-overflow-scrolling:touch;">
+        <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+    </div>
 
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 

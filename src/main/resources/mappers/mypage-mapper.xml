@@ -14,7 +14,7 @@
   <update id="updatePw" parameterType="member">
   		UPDATE MEMBER_S 
 		SET MEMBER_PW = #{memberPw}
-		WHERE MEMBER_NO = #{memberNo}
+		WHERE MEMBER_NO = ${memberNo}
   </update>
   
   
@@ -22,13 +22,37 @@
   <update id="updateSecession" parameterType="member">
   		UPDATE MEMBER_S
   		SET SECESSION_FL = 'Y'
-  		WHERE MEMBER_NO = #{memberNo}
+  		WHERE MEMBER_NO = ${memberNo}
   </update>
   
-  <update id="updateInfo" parameterType="member">
-	  	UPDATE MEMBER_S 
-	  	SET MEMBER_NICK = #{memberNickname}, MEMBER_TEL=#{memberTel}, MEMBER_ADDR=#{memberAddress}
-		WHERE MEMBER_NO = #{memberNo}
+  
+  <!-- 파라미터 타입이 map인 경우 -->
+  <!-- 
+  		1) parameterType="java.util.Map"
+  		
+  		2) parameterType="map" (별칭)
+  		
+  		3) 생략 (TypeHandler가 알아서 지정해줌 -> VO도 마찬가지)
+  
+   -->
+  
+  <!-- 회원 정보 수정 -->
+  <update id="updateInfo" parameterType="map">
+  		UPDATE MEMBER_S
+  		SET 
+  		MEMBER_NICK = #{updateNickname}, 
+  		MEMBER_TEL = #{updateTel}, 
+  		MEMBER_ADDR = #{memberAddress} 
+  		WHERE MEMBER_NO = ${memberNo}
+  </update>
+  
+  
+  <!-- 프로필 이미지 수정 -->
+  
+  <update id="updateProfile">
+	  	UPDATE MEMBER_S
+	  	SET PROFILE_IMG = #{profileImage}
+	  	WHERE MEMBER_NO = ${memberNo}
   </update>
  
   

@@ -24,8 +24,6 @@ public class MyPageDAO {
 	 * @return
 	 */
 	public String loginMemberNo(Member loginMember) {
-		
-		
 		return sqlSession.selectOne("myPageMapper.selectNo", loginMember);
 	}
 
@@ -51,9 +49,23 @@ public class MyPageDAO {
 
 
 
-	public int updateInfo(Member loginMember) {
+	/** 회원 정보 수정 DAO
+	 * @param paramMap
+	 * @return 
+	 */
+	public int updateInfo(Map<String, Object> paramMap) {
 		
-		return sqlSession.update("myPageMapper.updateInfo", loginMember);
+		return sqlSession.update("myPageMapper.updateInfo", paramMap);
+	}
+
+
+ 
+	/** 프로필 이미지 수정
+	 * @param map
+	 * @return
+	 */
+	public int updateProfile(Map<String, Object> map) {
+		return sqlSession.update("myPageMapper.updateProfile", map);
 	}
 
 }

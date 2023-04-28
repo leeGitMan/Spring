@@ -59,24 +59,40 @@ public class MemberDAO {
 		return sqlSession.selectOne("memberMapper.emailDupCheck", memberEmail);
 	}
 
+	/** 닉네임 중복 검사 DAO
+	 * @param memberNickname
+	 * @return
+	 */
 	public int nickNameDup(String memberNickname) {
-		
-		
 		return sqlSession.selectOne("memberMapper.memberNickDupCheck", memberNickname);
 	}
 
+	/** 회원 가입 DAO
+	 * @param inputMember
+	 * @return
+	 */
 	public int signUpFinal(Member inputMember) {
+		
+		// insert(), update(), delete() 메서드의 반환 값은 int 고정 
+		// -> mapper메서드 resultType이 항상 "_int"로 고정
+		// -> resultType -> 생략 가능
+		// -> 묵시적으로 리턴 타입은 "_int"
 		return sqlSession.update("memberMapper.signUp", inputMember);
 	}
 
+	/** 회원 조회(1행) DAO
+	 * @param inputMember
+	 * @return
+	 */
 	public Member selectOneMember(Member inputMember) {
 		Member selectMember = sqlSession.selectOne("memberMapper.selectMember", inputMember);
 		return selectMember;
 	}
 
+	/** 회원 목록 조회 DAO
+	 * @return
+	 */
 	public List selectAll() {
-		
-		
 		return sqlSession.selectList("memberMapper.selectAll");
 	}
 

@@ -1,8 +1,7 @@
 package edu.kh.comm.member.model.service;
 
+import java.io.IOException;
 import java.util.Map;
-
-import javax.servlet.http.HttpSession;
 
 import edu.kh.comm.member.model.vo.Member;
 
@@ -25,6 +24,16 @@ public interface MyPageService {
 	 */
 	int secession(Member loginMember, String pw);
 
-	int updateInfo(Member loginMember, Map<String, Object> paramMap);
+	/** 회원 정보 변경 서비스
+	 * @param paramMap
+	 * @return
+	 */
+	int updateInfo(Map<String, Object> paramMap);
+
+	/** 프로필 이미지 수정 서비스
+	 * @param map
+	 * @return
+	 */
+	int updateProfile(Map<String, Object> map) throws IOException;
 
 }

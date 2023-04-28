@@ -125,24 +125,11 @@ document.getElementById("select1").addEventListener("click", function(){
 
                 // 5) div에 ul 추가
                 div.append(ul);
-
-            } else { // 회원 정보 존재 X
-
-                // 1) h4 요소 생성
-                const h4 = document.createElement("h4");
-
-                // 2) 내용 추가
-                h4.innerText = "일치하는 회원이 없습니다";
-
-                // 3) 색 추가
-                h4.style.color = "red";
-
-                // 4) div에 추가
-                div.append(h4);
-            }
-
+            } 
         },
         error : function(request, status, error){
+            div.innerText = "일치하는 회원 정보가 없습니다!";
+            div.style.color='red';
             console.log("AJAX 에러 발생");
             console.log("상태코드 : " + request.status); // 404, 500
         }
