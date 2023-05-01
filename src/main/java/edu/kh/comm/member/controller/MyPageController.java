@@ -252,7 +252,7 @@ public class MyPageController {
 			// DB - 세션 동기화
 			loginMember.setProfileImage((String) map.get("profileImage"));
 		}else {
-			message = "프로필 이미지가 실패되었습니다.";
+			message = "프로필 이미지 등록 / 변경이 실패되었습니다.";
 		}
 		
 		ra.addFlashAttribute("msge", message);

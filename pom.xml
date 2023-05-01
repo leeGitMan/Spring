@@ -110,6 +110,9 @@
 		
 		
 		
+		
+		
+		
 	
 	
 	
@@ -207,6 +210,14 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
+		</dependency>
+		
+		<!-- log4jdbc -->
+		<!-- https://mvnrepository.com/artifact/org.lazyluke/log4jdbc-remix -->
+		<dependency>
+		    <groupId>org.lazyluke</groupId>
+		    <artifactId>log4jdbc-remix</artifactId>
+		    <version>0.2.7</version>
 		</dependency>
 		
 		
