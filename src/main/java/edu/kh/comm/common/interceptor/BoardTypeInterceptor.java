@@ -16,52 +16,48 @@ import edu.kh.comm.board.model.service.BoardService;
 import edu.kh.comm.board.model.vo.BoardType;
 
 public class BoardTypeInterceptor implements HandlerInterceptor{
-	
-	
-	
+
 	/* 인터셉터가 요청을 가로채는 시기
 	 * 
 	 * 1. preHandle (전처리) : 컨트롤러 수행 전
 	 * 
+	 * 
 	 * 2. postHandle (후처리) : 컨트롤러 수행 후 (컨트롤러 수행 결과 참조 가능)
 	 * 
-	 * 3. afterCompletion (View 단 처리 후) : 보통은 자원 반환(close)을 수행
 	 * 
-	 * ** 단, 비동기 요청(ajax 말고 자바 내부 쓰레드 요청)은 가로채지 않는다.
+	 * 3. afterCompletion (View 단 처리 후) : 보통은 자원 반환( close() )을 수행
 	 * 
-	 * 
-	 * 
+	 * ** 단, 비동기 요청(자바 내부의 별도 쓰레드 요청)은 가로채지 않음
 	 * 
 	 * */
+	
+	private Logger logger = LoggerFactory.getLogger(BoardTypeInterceptor.class);
+	
 	// BoardService 의존성 주입 받기(DI)
 	@Autowired
 	private BoardService boardService;
 	
 	
-	private Logger logger = LoggerFactory.getLogger(BoardTypeInterceptor.class);
-
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		
+	
 		//logger.info("전처리 수행");
 		
 		// application scope에 "boardTypeList"가 없을 경우
 		// 이를 조회하는 Service 호출 후 결과를 세팅
 		
 		// application scope 객체 얻어오기
-		
-		
 		ServletContext application = request.getServletContext();
 		
-		// application scope에 "boardTypeList"가 없을 경우
-		if(application.getAttribute("boardTypeList") == null) {
+		// application scope에 "boadTypeList"가 없을 경우
+		if( application.getAttribute("boardTypeList") == null ) {
+			
 			List<BoardType> boardTypeList = boardService.selectBoardType();
 			
 			application.setAttribute("boardTypeList", boardTypeList);
 			
 		}
-		
 		
 		
 		return HandlerInterceptor.super.preHandle(request, response, handler);
@@ -72,6 +68,7 @@ public class BoardTypeInterceptor implements HandlerInterceptor{
 			ModelAndView modelAndView) throws Exception {
 		
 		logger.info("후처리 수행");
+		
 		HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
 	}
 
@@ -80,9 +77,9 @@ public class BoardTypeInterceptor implements HandlerInterceptor{
 			throws Exception {
 		
 		logger.info("View단 처리 완료 후 수행");
+		
 		HandlerInterceptor.super.afterCompletion(request, response, handler, ex);
 	}
 	
 	
-
 }

@@ -1,57 +1,407 @@
-2023-04-24 15:09:34 [INFO] 초기화 필터 생성
-2023-04-24 15:09:37 [INFO] -------------------------------------------------------------
+2023-05-04 09:06:20 [INFO] 초기화 필터 생성
+2023-05-04 09:06:22 [INFO] 후처리 수행
+2023-05-04 09:06:22 [INFO] View단 처리 완료 후 수행
+2023-05-04 09:06:22 [INFO] 후처리 수행
+2023-05-04 09:06:22 [INFO] View단 처리 완료 후 수행
+2023-05-04 09:06:22 [INFO] 후처리 수행
+2023-05-04 09:06:22 [INFO] View단 처리 완료 후 수행
+2023-05-04 09:06:24 [INFO] 후처리 수행
+2023-05-04 09:06:24 [INFO] View단 처리 완료 후 수행
+2023-05-04 09:06:24 [INFO] 후처리 수행
+2023-05-04 09:06:24 [INFO] View단 처리 완료 후 수행
+2023-05-04 09:06:24 [INFO] 후처리 수행
+2023-05-04 09:06:24 [INFO] View단 처리 완료 후 수행
+2023-05-04 10:09:58 [INFO] 초기화 필터 생성
+2023-05-04 10:10:00 [INFO] -------------------------------------------------------------
 Start : BoardServiceImpl - selectBoardType
 Parameter : []
 ip : 0:0:0:0:0:0:0:1
-2023-04-24 15:09:37 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@372b106d, edu.kh.comm.board.model.vo.BoardType@7b5d1a7c, edu.kh.comm.board.model.vo.BoardType@69cebf5e]
-2023-04-24 15:09:37 [INFO] Running Time : 871ms
-2023-04-24 15:09:37 [INFO] End : BoardServiceImpl - selectBoardType
+2023-05-04 10:10:01 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@37fa2f3b, edu.kh.comm.board.model.vo.BoardType@4335ebf4, edu.kh.comm.board.model.vo.BoardType@7883126c]
+2023-05-04 10:10:01 [INFO] Running Time : 848ms
+2023-05-04 10:10:01 [INFO] End : BoardServiceImpl - selectBoardType
 -------------------------------------------------------------
 
-2023-04-24 15:09:38 [INFO] -------------------------------------------------------------
+2023-05-04 10:10:01 [INFO] -------------------------------------------------------------
 Start : MemberServiceImpl - selectAll
 Parameter : []
 ip : 0:0:0:0:0:0:0:1
-2023-04-24 15:09:38 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
-2023-04-24 15:09:38 [INFO] Running Time : 6ms
-2023-04-24 15:09:38 [INFO] End : MemberServiceImpl - selectAll
+2023-05-04 10:10:01 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-04 10:10:01 [INFO] Running Time : 5ms
+2023-05-04 10:10:01 [INFO] End : MemberServiceImpl - selectAll
 -------------------------------------------------------------
 
-2023-04-24 15:09:48 [INFO] -------------------------------------------------------------
+2023-05-04 10:10:04 [INFO] 로그인 기능 수행됨
+2023-05-04 10:10:04 [INFO] -------------------------------------------------------------
+Start : MemberServiceImpl - login
+Parameter : [Member(memberNo=0, memberEmail=test01@naver.com, memberPw=asd123, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+ip : 0:0:0:0:0:0:0:1
+2023-05-04 10:10:04 [DEBUG] asd123 / $2a$10$waR1jDDCpAQvXL9oXVv85e.EJlzh4.7cl1dOMWzqvc/AfpzQh262u
+2023-05-04 10:10:04 [INFO] Return Value : null
+2023-05-04 10:10:04 [INFO] Running Time : 153ms
+2023-05-04 10:10:04 [INFO] End : MemberServiceImpl - login
+-------------------------------------------------------------
+
+2023-05-04 10:10:04 [INFO] -------------------------------------------------------------
 Start : MemberServiceImpl - selectAll
 Parameter : []
 ip : 0:0:0:0:0:0:0:1
-2023-04-24 15:09:48 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
-2023-04-24 15:09:48 [INFO] Running Time : 3ms
-2023-04-24 15:09:48 [INFO] End : MemberServiceImpl - selectAll
+2023-05-04 10:10:04 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-04 10:10:04 [INFO] Running Time : 3ms
+2023-05-04 10:10:04 [INFO] End : MemberServiceImpl - selectAll
 -------------------------------------------------------------
 
-2023-04-24 15:09:58 [INFO] 로그인 기능 수행됨
-2023-04-24 15:09:58 [INFO] -------------------------------------------------------------
+2023-05-04 10:10:09 [INFO] 로그인 기능 수행됨
+2023-05-04 10:10:09 [INFO] -------------------------------------------------------------
 Start : MemberServiceImpl - login
 Parameter : [Member(memberNo=0, memberEmail=test01@naver.com, memberPw=pass01!, memberNickname=null, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
 ip : 0:0:0:0:0:0:0:1
-2023-04-24 15:09:58 [DEBUG] pass01! / $2a$10$nBR2jT/3Fp7xC2MUYYMBCuXB7k0M4VUsJldMvWFvl/2z8ZyDDJDj.
-2023-04-24 15:09:58 [INFO] Return Value : null
-2023-04-24 15:09:58 [INFO] Running Time : 84ms
-2023-04-24 15:09:58 [INFO] End : MemberServiceImpl - login
+2023-05-04 10:10:09 [DEBUG] pass01! / $2a$10$WFcqNotQrVrdUXD/prmoh.HPVzlWBz2FypORjY8Muv.ACVSC5Yyxu
+2023-05-04 10:10:09 [INFO] Return Value : Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=01011111111, memberAddress=02830,,서울 성북구 아리랑로 3,,201호, profileImage=null, enrollDate=2023-04-26 13:51:26, secessionFlag=null)
+2023-05-04 10:10:09 [INFO] Running Time : 107ms
+2023-05-04 10:10:09 [INFO] End : MemberServiceImpl - login
 -------------------------------------------------------------
 
-2023-04-24 15:09:59 [INFO] -------------------------------------------------------------
+2023-05-04 10:10:09 [INFO] -------------------------------------------------------------
 Start : MemberServiceImpl - selectAll
 Parameter : []
-ip : 0:0:0:0:0:0:0:1
-2023-04-24 15:09:59 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
-2023-04-24 15:09:59 [INFO] Running Time : 2ms
-2023-04-24 15:09:59 [INFO] End : MemberServiceImpl - selectAll
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:09 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-04 10:10:09 [INFO] Running Time : 2ms
+2023-05-04 10:10:09 [INFO] End : MemberServiceImpl - selectAll
 -------------------------------------------------------------
 
-2023-04-24 15:10:09 [INFO] -------------------------------------------------------------
-Start : MemberServiceImpl - selectAll
-Parameter : []
-ip : 0:0:0:0:0:0:0:1
-2023-04-24 15:10:09 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
-2023-04-24 15:10:09 [INFO] Running Time : 3ms
-2023-04-24 15:10:09 [INFO] End : MemberServiceImpl - selectAll
+2023-05-04 10:10:10 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 2]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:10 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=0, limit=10, pageSize=10, maxPage=0, startPage=1, endPage=0, prevPage=1, nextPage=0], boardList=[]}
+2023-05-04 10:10:10 [INFO] Running Time : 52ms
+2023-05-04 10:10:10 [INFO] End : BoardServiceImpl - selectBoardList
 -------------------------------------------------------------
 
+2023-05-04 10:10:10 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:10 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@51fdb5b5, edu.kh.comm.board.model.vo.Board@3d5cab28, edu.kh.comm.board.model.vo.Board@4f628960, edu.kh.comm.board.model.vo.Board@4d62963, edu.kh.comm.board.model.vo.Board@38ba7451, edu.kh.comm.board.model.vo.Board@60678d85, edu.kh.comm.board.model.vo.Board@3b152160, edu.kh.comm.board.model.vo.Board@ebd8a50, edu.kh.comm.board.model.vo.Board@65ce6f2a, edu.kh.comm.board.model.vo.Board@3999cdb3]}
+2023-05-04 10:10:10 [INFO] Running Time : 10ms
+2023-05-04 10:10:10 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:10:11 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardDetail
+Parameter : [500]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:11 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@59269aec
+2023-05-04 10:10:11 [INFO] Running Time : 12ms
+2023-05-04 10:10:11 [INFO] End : BoardServiceImpl - selectBoardDetail
+-------------------------------------------------------------
+
+2023-05-04 10:10:11 [INFO] -------------------------------------------------------------
+Start : ReplyServiceImpl - selectReplyList
+Parameter : [500]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:11 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+### The error may exist in /mappers/reply-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT LEVEL,  R.* FROM       (SELECT REPLY_NO, REPLY_CONTENT,           TO_CHAR(CREATE_DT, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') CREATE_DT,           BOARD_NO, MEMBER_NO, MEMBER_NICK, PROFILE_IMG, PARENT_REPLY_NO, REPLY_ST       FROM REPLY_S       JOIN MEMBER_S USING(MEMBER_NO)       WHERE BOARD_NO = ?) R      WHERE REPLY_ST = 'N'   START WITH PARENT_REPLY_NO IS NULL   CONNECT BY PRIOR REPLY_NO = PARENT_REPLY_NO   ORDER SIBLINGS BY REPLY_NO
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+
+2023-05-04 10:10:11 [INFO] End : ReplyServiceImpl - selectReplyList
+-------------------------------------------------------------
+
+2023-05-04 10:10:16 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:16 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@bfc10fb, edu.kh.comm.board.model.vo.Board@47070923, edu.kh.comm.board.model.vo.Board@40ee64b3, edu.kh.comm.board.model.vo.Board@261e0718, edu.kh.comm.board.model.vo.Board@4d8ea0e8, edu.kh.comm.board.model.vo.Board@323ff66b, edu.kh.comm.board.model.vo.Board@147d763, edu.kh.comm.board.model.vo.Board@57373694, edu.kh.comm.board.model.vo.Board@6f86557a, edu.kh.comm.board.model.vo.Board@22477a4f]}
+2023-05-04 10:10:16 [INFO] Running Time : 6ms
+2023-05-04 10:10:16 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:10:21 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [2, 3]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:10:21 [INFO] Return Value : {pagination=Pagination [currentPage=2, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@56c1db61, edu.kh.comm.board.model.vo.Board@39a5fbe3, edu.kh.comm.board.model.vo.Board@22df4bff, edu.kh.comm.board.model.vo.Board@7f67a63d, edu.kh.comm.board.model.vo.Board@27256063, edu.kh.comm.board.model.vo.Board@3149fd87, edu.kh.comm.board.model.vo.Board@6991c8e2, edu.kh.comm.board.model.vo.Board@2b85dda3, edu.kh.comm.board.model.vo.Board@27af86c8, edu.kh.comm.board.model.vo.Board@5974e27f]}
+2023-05-04 10:10:21 [INFO] Running Time : 6ms
+2023-05-04 10:10:21 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:11:19 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - searchBoardList
+Parameter : [{key=t, query=위치, cp=1, boardCode=3}]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:11:19 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=0, limit=10, pageSize=10, maxPage=0, startPage=1, endPage=0, prevPage=1, nextPage=0], boardList=[]}
+2023-05-04 10:11:19 [INFO] Running Time : 19ms
+2023-05-04 10:11:19 [INFO] End : BoardServiceImpl - searchBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:11:22 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [2, 3]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:11:22 [INFO] Return Value : {pagination=Pagination [currentPage=2, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@3be6a837, edu.kh.comm.board.model.vo.Board@58875fa2, edu.kh.comm.board.model.vo.Board@43d9e9f1, edu.kh.comm.board.model.vo.Board@76ab7481, edu.kh.comm.board.model.vo.Board@7882dd73, edu.kh.comm.board.model.vo.Board@1a1ae78e, edu.kh.comm.board.model.vo.Board@1680035d, edu.kh.comm.board.model.vo.Board@3b226270, edu.kh.comm.board.model.vo.Board@55254922, edu.kh.comm.board.model.vo.Board@184ef29f]}
+2023-05-04 10:11:22 [INFO] Running Time : 3ms
+2023-05-04 10:11:22 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:11:29 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - searchBoardList
+Parameter : [{key=c, query=게시글, cp=1, boardCode=3}]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:11:29 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@355c4878, edu.kh.comm.board.model.vo.Board@67508c59, edu.kh.comm.board.model.vo.Board@3ffec35, edu.kh.comm.board.model.vo.Board@336da91c, edu.kh.comm.board.model.vo.Board@64252881, edu.kh.comm.board.model.vo.Board@7f44218, edu.kh.comm.board.model.vo.Board@7b169897, edu.kh.comm.board.model.vo.Board@25edfba0, edu.kh.comm.board.model.vo.Board@6841aebc, edu.kh.comm.board.model.vo.Board@4d00c52e]}
+2023-05-04 10:11:29 [INFO] Running Time : 16ms
+2023-05-04 10:11:29 [INFO] End : BoardServiceImpl - searchBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:12:38 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - searchBoardList
+Parameter : [{key=t, query=게시글, cp=1, boardCode=3}]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:12:38 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@972be76, edu.kh.comm.board.model.vo.Board@839fbe3, edu.kh.comm.board.model.vo.Board@75ec8657, edu.kh.comm.board.model.vo.Board@ad5d5ea, edu.kh.comm.board.model.vo.Board@16c84bc8, edu.kh.comm.board.model.vo.Board@51e94c11, edu.kh.comm.board.model.vo.Board@40a6b645, edu.kh.comm.board.model.vo.Board@64f8413e, edu.kh.comm.board.model.vo.Board@303ad062, edu.kh.comm.board.model.vo.Board@2b289bb0]}
+2023-05-04 10:12:38 [INFO] Running Time : 14ms
+2023-05-04 10:12:38 [INFO] End : BoardServiceImpl - searchBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:12:46 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - searchBoardList
+Parameter : [{key=c, query=게시글, cp=1, boardCode=3}]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:12:46 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@5d48ba4e, edu.kh.comm.board.model.vo.Board@705d86a1, edu.kh.comm.board.model.vo.Board@66485f3b, edu.kh.comm.board.model.vo.Board@6c9da320, edu.kh.comm.board.model.vo.Board@741ffe37, edu.kh.comm.board.model.vo.Board@686b169b, edu.kh.comm.board.model.vo.Board@4cfe2d2a, edu.kh.comm.board.model.vo.Board@4dfb0336, edu.kh.comm.board.model.vo.Board@469eb2f8, edu.kh.comm.board.model.vo.Board@7671ab7e]}
+2023-05-04 10:12:46 [INFO] Running Time : 6ms
+2023-05-04 10:12:46 [INFO] End : BoardServiceImpl - searchBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:12:53 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - searchBoardList
+Parameter : [{key=tc, query=게시글, cp=1, boardCode=3}]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:12:53 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@3fcd7559, edu.kh.comm.board.model.vo.Board@5c1ead1f, edu.kh.comm.board.model.vo.Board@6decafef, edu.kh.comm.board.model.vo.Board@9f69095, edu.kh.comm.board.model.vo.Board@5dc54b4f, edu.kh.comm.board.model.vo.Board@741a63bd, edu.kh.comm.board.model.vo.Board@7c813906, edu.kh.comm.board.model.vo.Board@414e6c3b, edu.kh.comm.board.model.vo.Board@36a6c86e, edu.kh.comm.board.model.vo.Board@1186428c]}
+2023-05-04 10:12:53 [INFO] Running Time : 16ms
+2023-05-04 10:12:53 [INFO] End : BoardServiceImpl - searchBoardList
+-------------------------------------------------------------
+
+2023-05-04 10:12:59 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - searchBoardList
+Parameter : [{key=w, query=게시글, cp=1, boardCode=3}]
+ip : 0:0:0:0:0:0:0:1 (email : test01@naver.com)
+2023-05-04 10:12:59 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=0, limit=10, pageSize=10, maxPage=0, startPage=1, endPage=0, prevPage=1, nextPage=0], boardList=[]}
+2023-05-04 10:12:59 [INFO] Running Time : 17ms
+2023-05-04 10:12:59 [INFO] End : BoardServiceImpl - searchBoardList
+-------------------------------------------------------------
+
+2023-05-04 12:43:45 [INFO] 초기화 필터 생성
+2023-05-04 12:43:47 [INFO] 후처리 수행
+2023-05-04 12:43:47 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:43:47 [INFO] 후처리 수행
+2023-05-04 12:43:47 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:43:48 [INFO] 후처리 수행
+2023-05-04 12:43:49 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:43:53 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:45:06 [INFO] 초기화 필터 생성
+2023-05-04 12:45:07 [INFO] 후처리 수행
+2023-05-04 12:45:07 [INFO] 후처리 수행
+2023-05-04 12:45:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:45:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:45:07 [INFO] 후처리 수행
+2023-05-04 12:45:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:45:08 [INFO] 후처리 수행
+2023-05-04 12:45:08 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:45:10 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:00 [INFO] 초기화 필터 파괴
+2023-05-04 12:47:02 [INFO] 초기화 필터 생성
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:45 [INFO] 후처리 수행
+2023-05-04 12:47:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:47:47 [INFO] 초기화 필터 파괴
+2023-05-04 12:47:49 [INFO] 초기화 필터 생성
+2023-05-04 12:47:52 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:48:58 [INFO] 초기화 필터 파괴
+2023-05-04 12:49:00 [INFO] 초기화 필터 생성
+2023-05-04 12:49:11 [INFO] 초기화 필터 파괴
+2023-05-04 12:49:13 [INFO] 초기화 필터 생성
+2023-05-04 12:50:08 [INFO] 초기화 필터 파괴
+2023-05-04 12:50:10 [INFO] 초기화 필터 생성
+2023-05-04 12:50:21 [INFO] 초기화 필터 파괴
+2023-05-04 12:50:23 [INFO] 초기화 필터 생성
+2023-05-04 12:50:39 [INFO] 초기화 필터 생성
+2023-05-04 12:50:41 [INFO] 후처리 수행
+2023-05-04 12:50:41 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:50:41 [INFO] 후처리 수행
+2023-05-04 12:50:41 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:50:51 [INFO] 후처리 수행
+2023-05-04 12:50:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:01 [INFO] 후처리 수행
+2023-05-04 12:51:01 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:07 [INFO] 후처리 수행
+2023-05-04 12:51:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:08 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:09 [INFO] 후처리 수행
+2023-05-04 12:51:09 [INFO] View단 처리 완료 후 수행
+2023-05-04 12:51:12 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:03 [INFO] 초기화 필터 생성
+2023-05-04 13:10:04 [INFO] 후처리 수행
+2023-05-04 13:10:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:05 [INFO] 후처리 수행
+2023-05-04 13:10:05 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:05 [INFO] 후처리 수행
+2023-05-04 13:10:05 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:43 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:45 [INFO] 후처리 수행
+2023-05-04 13:10:45 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:10:47 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:27 [INFO] 후처리 수행
+2023-05-04 13:12:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:28 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:31 [INFO] 후처리 수행
+2023-05-04 13:12:31 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:36 [INFO] 후처리 수행
+2023-05-04 13:12:36 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:37 [INFO] 후처리 수행
+2023-05-04 13:12:37 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:37 [INFO] 후처리 수행
+2023-05-04 13:12:37 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:12:39 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:55 [INFO] 후처리 수행
+2023-05-04 13:13:55 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:55 [INFO] 후처리 수행
+2023-05-04 13:13:55 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:55 [INFO] 후처리 수행
+2023-05-04 13:13:55 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:55 [INFO] 후처리 수행
+2023-05-04 13:13:55 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:55 [INFO] 후처리 수행
+2023-05-04 13:13:55 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:55 [INFO] 후처리 수행
+2023-05-04 13:13:55 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:13:57 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:04 [INFO] 후처리 수행
+2023-05-04 13:14:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:04 [INFO] 후처리 수행
+2023-05-04 13:14:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:04 [INFO] 후처리 수행
+2023-05-04 13:14:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:04 [INFO] 후처리 수행
+2023-05-04 13:14:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:04 [INFO] 후처리 수행
+2023-05-04 13:14:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:04 [INFO] 후처리 수행
+2023-05-04 13:14:04 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:06 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:17 [INFO] 초기화 필터 생성
+2023-05-04 13:14:18 [INFO] 후처리 수행
+2023-05-04 13:14:18 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:18 [INFO] 후처리 수행
+2023-05-04 13:14:18 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:24 [INFO] 후처리 수행
+2023-05-04 13:14:24 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:24 [INFO] 후처리 수행
+2023-05-04 13:14:24 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:14:27 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:07 [INFO] 후처리 수행
+2023-05-04 13:16:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:07 [INFO] 후처리 수행
+2023-05-04 13:16:07 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:15 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:51 [INFO] 후처리 수행
+2023-05-04 13:16:51 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:54 [INFO] 후처리 수행
+2023-05-04 13:16:54 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:57 [INFO] 후처리 수행
+2023-05-04 13:16:57 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:16:57 [INFO] 후처리 수행
+2023-05-04 13:16:57 [INFO] View단 처리 완료 후 수행
+2023-05-04 13:17:00 [INFO] 후처리 수행
+2023-05-04 13:17:00 [INFO] View단 처리 완료 후 수행

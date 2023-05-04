@@ -7,7 +7,6 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
      <title>KH 커뮤니티</title>
  
      <link rel="stylesheet" href="../resources/css/main-style.css">
@@ -126,18 +125,18 @@
                  </label>
                  
                  <div class="signUp-input-area">
-                     <input type="text" id="zipCode" name="memberAddress"
+                     <input type="text" id="sample4_postcode" name="memberAddress"
                              placeholder="우편번호" maxlength="6">
                      
-                     <button onclick="findArr()" type="button">검색</button>
+                     <button type="button" onclick="return sample4_execDaumPostcode()">검색</button>
                  </div>
  
                  <div class="signUp-input-area">
-                     <input type="text" name="memberAddress" id="memberAddress" placeholder="도로명주소">
+                     <input type="text" id="sample4_roadAddress" name="memberAddress" placeholder="도로명주소">
                  </div>
  
                  <div class="signUp-input-area">
-                     <input type="text" name="memberAddress" id="detailAddress" placeholder="상세주소">
+                     <input type="text" id="sample4_detailAddress" name="memberAddress" placeholder="상세주소">
                  </div>
  
                  <button type="submit" id="signUp-btn">가입하기</button>
@@ -148,12 +147,6 @@
  
  
      </main>
-
-
-
-     
-
-    
  
     <!-- footer include -->
     <jsp:include page="/WEB-INF/views/common/footer.jsp" />
@@ -162,8 +155,12 @@
     <!-- jQuery 라이브러리 추가(CDN) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
+    <!-- 다음 주소 API -->
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+
     <!-- signUp.js 연결 -->
     <script src="${contextPath}/resources/js/member/signUp.js"></script>
 
+    
  </body>
  </html>

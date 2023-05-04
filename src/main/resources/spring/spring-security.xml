@@ -4,14 +4,9 @@
 	xmlns:security="http://www.springframework.org/schema/security"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.7.xsd">
-	
-	
-	
+
 	<!-- Bcrypt 암호화용 bean 생성 -->
-	
 	<bean id="bcryptPasswordEncoder" 
-			class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
-	
-	
+			class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
 
 </beans>

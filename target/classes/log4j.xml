@@ -98,9 +98,6 @@
 		<level value="INFO" />
 		<appender-ref ref="sql-console" />
 	</logger>
-	
-	
-	
 
 	<!-- Root Logger -->
 	<root>

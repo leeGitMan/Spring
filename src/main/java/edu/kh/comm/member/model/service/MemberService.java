@@ -10,38 +10,55 @@ import edu.kh.comm.member.model.vo.Member;
  * 
  * 2. Spring AOP를 위해서 필요
  * 
- * 3. 클래스간의 결합도를 약화 시키기 위해서 -> 유지보수성 향상
- * 
+ * 3. 클래스간의 결합도를 약화 시키기 위해서 -> 유지보수성 향상 (객체 지향적 프로그래밍)
  * */
 public interface MemberService {
-
-	// 모든 메서드가 추상 메서드 (묵시적으로 public abstract) 
-	// 모든 필드는   상수        (묵시적으로 public static final)
 	
+	// 모든 메서드가 추상 메서드  (묵시적으로 public abstract)
+	// 모든 필드는   상수 		  (묵시적으로 public static final)
+
 	/** 로그인 서비스
 	 * @param inputMember
 	 * @return loginMember
 	 */
 	public abstract Member login(Member inputMember);
 
-	/** 이메일 중복 검사
+	/** 이메일 중복 검사 서비스
 	 * @param memberEmail
-	 * @return
+	 * @return result
 	 */
 	public abstract int emailDupCheck(String memberEmail);
+ 
+	/** 닉네임 중복 검사 서비스
+	 * @param memberNickname
+	 * @return result
+	 */
+	public abstract int nicknameDupCheck(String memberNickname);
 
-	public abstract int nickNameDup(String memberNickname);
+	
+	/** 회원 가입 서비스
+	 * @param inputMember
+	 * @return result
+	 */
+	public abstract int signUp(Member inputMember);
 
-	public abstract int signUpFinal(Member inputMember);
+	/** 회원 1명 정보 조회 서비스
+	 * @param memberEmail
+	 * @return mem
+	 */
+	public abstract Member selectOne(String memberEmail);
 
-	public abstract Member selectOneMember(Member inputMember);
+	/** 회원 목록 조회 서비스
+	 * @return list
+	 */
+	public abstract List<Member> selectAll();
 
-	public abstract List selectAll();
-	
-	
-	
-	
-	
-	
 	
 }
+
+
+
+
+
+
+

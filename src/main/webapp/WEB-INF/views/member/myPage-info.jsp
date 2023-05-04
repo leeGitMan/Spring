@@ -66,9 +66,9 @@
                     </div>
 
                     <div class="myPage-row info-address">
-                        <input type="text" name="updateAddress" id="postcode"  value="${addr[0]}"  maxlength="6">
+                        <input type="text" name="updateAddress" id="postcode" value="${addr[0]}"  maxlength="6">
 
-                        <button type="button" onclick="return execDaumPostcode()" id="info-address-btn">검색</button>
+                        <button type="button" id="info-address-btn" onclick="return execDaumPostcode()">검색</button>
                     </div>
 
                     <div class="myPage-row info-address">
@@ -88,7 +88,7 @@
 
 	<jsp:include page="/WEB-INF/views/common/footer.jsp"/>
 
-    <%-- 다음 주소 API --%>
+	<%-- 다음 주소 API --%>
     <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:11;-webkit-overflow-scrolling:touch;">
         <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
     </div>
@@ -98,8 +98,6 @@
     <!-- myPage.js 추가 -->
     <script src="${contextPath}/resources/js/member/myPage.js"></script>
 
-    <!-- myPageAddress.js 추가 -->
-    <!-- <script src="${contextPath}/resources/js/member/myPageAddress.js"></script> -->
 
 </body>
 </html>

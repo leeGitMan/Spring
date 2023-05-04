@@ -1,0 +1,237 @@
+2023-05-02 09:41:09 [INFO] 초기화 필터 생성
+2023-05-02 09:41:11 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:12 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@6bdc10f8, edu.kh.comm.board.model.vo.BoardType@79c906fc, edu.kh.comm.board.model.vo.BoardType@2e2ddbd4]
+2023-05-02 09:41:12 [INFO] Running Time : 884ms
+2023-05-02 09:41:12 [INFO] End : BoardServiceImpl - selectBoardType
+-------------------------------------------------------------
+
+2023-05-02 09:41:12 [INFO] -------------------------------------------------------------
+Start : MemberServiceImpl - selectAll
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:12 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-02 09:41:12 [INFO] Running Time : 10ms
+2023-05-02 09:41:12 [INFO] End : MemberServiceImpl - selectAll
+-------------------------------------------------------------
+
+2023-05-02 09:41:22 [INFO] -------------------------------------------------------------
+Start : MemberServiceImpl - selectAll
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:22 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-02 09:41:22 [INFO] Running Time : 3ms
+2023-05-02 09:41:22 [INFO] End : MemberServiceImpl - selectAll
+-------------------------------------------------------------
+
+2023-05-02 09:41:32 [INFO] -------------------------------------------------------------
+Start : MemberServiceImpl - selectAll
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:32 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-02 09:41:32 [INFO] Running Time : 5ms
+2023-05-02 09:41:32 [INFO] End : MemberServiceImpl - selectAll
+-------------------------------------------------------------
+
+2023-05-02 09:41:43 [INFO] -------------------------------------------------------------
+Start : MemberServiceImpl - selectAll
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:43 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-02 09:41:43 [INFO] Running Time : 5ms
+2023-05-02 09:41:43 [INFO] End : MemberServiceImpl - selectAll
+-------------------------------------------------------------
+
+2023-05-02 09:41:49 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 1]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:50 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=1, limit=10, pageSize=10, maxPage=1, startPage=1, endPage=1, prevPage=1, nextPage=1], boardList=[edu.kh.comm.board.model.vo.Board@2d94091e]}
+2023-05-02 09:41:50 [INFO] Running Time : 84ms
+2023-05-02 09:41:50 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:41:51 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 2]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:51 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=0, limit=10, pageSize=10, maxPage=0, startPage=1, endPage=0, prevPage=1, nextPage=0], boardList=[]}
+2023-05-02 09:41:51 [INFO] Running Time : 12ms
+2023-05-02 09:41:51 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:41:52 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:52 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@47dad064, edu.kh.comm.board.model.vo.Board@23db786e, edu.kh.comm.board.model.vo.Board@34ff9e26, edu.kh.comm.board.model.vo.Board@545ebce6, edu.kh.comm.board.model.vo.Board@45160ff9, edu.kh.comm.board.model.vo.Board@3df6073d, edu.kh.comm.board.model.vo.Board@75b0a00b, edu.kh.comm.board.model.vo.Board@54289bd7, edu.kh.comm.board.model.vo.Board@21343f6c, edu.kh.comm.board.model.vo.Board@2c761b98]}
+2023-05-02 09:41:52 [INFO] Running Time : 22ms
+2023-05-02 09:41:52 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:41:54 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [2, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:54 [INFO] Return Value : {pagination=Pagination [currentPage=2, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@e209cd2, edu.kh.comm.board.model.vo.Board@e8d4c5a, edu.kh.comm.board.model.vo.Board@228a17, edu.kh.comm.board.model.vo.Board@52818713, edu.kh.comm.board.model.vo.Board@58cd479d, edu.kh.comm.board.model.vo.Board@3c462f42, edu.kh.comm.board.model.vo.Board@28a078ef, edu.kh.comm.board.model.vo.Board@7647dbf7, edu.kh.comm.board.model.vo.Board@44048b0d, edu.kh.comm.board.model.vo.Board@49b590f0]}
+2023-05-02 09:41:54 [INFO] Running Time : 10ms
+2023-05-02 09:41:54 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:41:56 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [3, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:56 [INFO] Return Value : {pagination=Pagination [currentPage=3, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@66a63dc5, edu.kh.comm.board.model.vo.Board@3b1b268f, edu.kh.comm.board.model.vo.Board@38393205, edu.kh.comm.board.model.vo.Board@41a128c6, edu.kh.comm.board.model.vo.Board@163e7d22, edu.kh.comm.board.model.vo.Board@74f31e34, edu.kh.comm.board.model.vo.Board@5aba3b5, edu.kh.comm.board.model.vo.Board@4d044cde, edu.kh.comm.board.model.vo.Board@28b6ef31, edu.kh.comm.board.model.vo.Board@445846ad]}
+2023-05-02 09:41:56 [INFO] Running Time : 7ms
+2023-05-02 09:41:56 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:41:59 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [4, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:41:59 [INFO] Return Value : {pagination=Pagination [currentPage=4, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@da8b27, edu.kh.comm.board.model.vo.Board@16f03f59, edu.kh.comm.board.model.vo.Board@4977f83e, edu.kh.comm.board.model.vo.Board@6db842f2, edu.kh.comm.board.model.vo.Board@396f6fd1, edu.kh.comm.board.model.vo.Board@2ef28552, edu.kh.comm.board.model.vo.Board@58323eba, edu.kh.comm.board.model.vo.Board@77b2489c, edu.kh.comm.board.model.vo.Board@3561b05c, edu.kh.comm.board.model.vo.Board@f036bb7]}
+2023-05-02 09:41:59 [INFO] Running Time : 7ms
+2023-05-02 09:41:59 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:42:00 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:42:00 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@53d9b29, edu.kh.comm.board.model.vo.Board@14655ad9, edu.kh.comm.board.model.vo.Board@5400afeb, edu.kh.comm.board.model.vo.Board@24953436, edu.kh.comm.board.model.vo.Board@4d18175e, edu.kh.comm.board.model.vo.Board@73952fb6, edu.kh.comm.board.model.vo.Board@223bb9d8, edu.kh.comm.board.model.vo.Board@2f020d2d, edu.kh.comm.board.model.vo.Board@22ad4d74, edu.kh.comm.board.model.vo.Board@781f3e08]}
+2023-05-02 09:42:00 [INFO] Running Time : 6ms
+2023-05-02 09:42:00 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:42:09 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [50, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 09:42:09 [INFO] Return Value : {pagination=Pagination [currentPage=50, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=41, endPage=50, prevPage=40, nextPage=50], boardList=[edu.kh.comm.board.model.vo.Board@395ee620, edu.kh.comm.board.model.vo.Board@74503b59, edu.kh.comm.board.model.vo.Board@179c5a4f, edu.kh.comm.board.model.vo.Board@5aa11635, edu.kh.comm.board.model.vo.Board@148084a7, edu.kh.comm.board.model.vo.Board@617fef9d, edu.kh.comm.board.model.vo.Board@14449fdf, edu.kh.comm.board.model.vo.Board@468623dc, edu.kh.comm.board.model.vo.Board@56b33217, edu.kh.comm.board.model.vo.Board@48ae2c5b]}
+2023-05-02 09:42:09 [INFO] Running Time : 32ms
+2023-05-02 09:42:09 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 09:43:44 [INFO] 초기화 필터 생성
+2023-05-02 09:43:46 [INFO] 후처리 수행
+2023-05-02 09:43:46 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:43:46 [INFO] 후처리 수행
+2023-05-02 09:43:46 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:43:48 [INFO] 후처리 수행
+2023-05-02 09:43:49 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:43:49 [INFO] 후처리 수행
+2023-05-02 09:43:49 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:43:50 [INFO] 후처리 수행
+2023-05-02 09:43:50 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:43:53 [INFO] 후처리 수행
+2023-05-02 09:43:53 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:43:55 [INFO] 후처리 수행
+2023-05-02 09:43:55 [INFO] View단 처리 완료 후 수행
+2023-05-02 09:44:03 [INFO] 후처리 수행
+2023-05-02 09:44:03 [INFO] View단 처리 완료 후 수행
+2023-05-02 14:41:18 [INFO] 초기화 필터 생성
+2023-05-02 14:41:20 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardType
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:21 [INFO] Return Value : [edu.kh.comm.board.model.vo.BoardType@7db263a8, edu.kh.comm.board.model.vo.BoardType@2e6317e8, edu.kh.comm.board.model.vo.BoardType@60c9df8f]
+2023-05-02 14:41:21 [INFO] Running Time : 904ms
+2023-05-02 14:41:21 [INFO] End : BoardServiceImpl - selectBoardType
+-------------------------------------------------------------
+
+2023-05-02 14:41:22 [INFO] -------------------------------------------------------------
+Start : MemberServiceImpl - selectAll
+Parameter : []
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:22 [INFO] Return Value : [Member(memberNo=1, memberEmail=test01@naver.com, memberPw=null, memberNickname=테스트1, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null), Member(memberNo=2, memberEmail=test02@naver.com, memberPw=null, memberNickname=유저이, memberTel=null, memberAddress=null, profileImage=null, enrollDate=null, secessionFlag=null)]
+2023-05-02 14:41:22 [INFO] Running Time : 6ms
+2023-05-02 14:41:22 [INFO] End : MemberServiceImpl - selectAll
+-------------------------------------------------------------
+
+2023-05-02 14:41:25 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:25 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@47fbe08, edu.kh.comm.board.model.vo.Board@3fa23921, edu.kh.comm.board.model.vo.Board@4952efbc, edu.kh.comm.board.model.vo.Board@36fe2bc5, edu.kh.comm.board.model.vo.Board@4f084cec, edu.kh.comm.board.model.vo.Board@614d0f1d, edu.kh.comm.board.model.vo.Board@3f3c3387, edu.kh.comm.board.model.vo.Board@78db87a6, edu.kh.comm.board.model.vo.Board@7539db7d, edu.kh.comm.board.model.vo.Board@7c850720]}
+2023-05-02 14:41:25 [INFO] Running Time : 101ms
+2023-05-02 14:41:25 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 14:41:25 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardDetail
+Parameter : [500]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:25 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@39d84206
+2023-05-02 14:41:25 [INFO] Running Time : 26ms
+2023-05-02 14:41:25 [INFO] End : BoardServiceImpl - selectBoardDetail
+-------------------------------------------------------------
+
+2023-05-02 14:41:25 [INFO] -------------------------------------------------------------
+Start : ReplyServiceImpl - selectReplyList
+Parameter : [500]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:25 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+### The error may exist in /mappers/reply-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT LEVEL,  R.* FROM       (SELECT REPLY_NO, REPLY_CONTENT,           TO_CHAR(CREATE_DT, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') CREATE_DT,           BOARD_NO, MEMBER_NO, MEMBER_NICK, PROFILE_IMG, PARENT_REPLY_NO, REPLY_ST       FROM REPLY_S       JOIN MEMBER_S USING(MEMBER_NO)       WHERE BOARD_NO = ?) R      WHERE REPLY_ST = 'N'   START WITH PARENT_REPLY_NO IS NULL   CONNECT BY PRIOR REPLY_NO = PARENT_REPLY_NO   ORDER SIBLINGS BY REPLY_NO
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+
+2023-05-02 14:41:25 [INFO] End : ReplyServiceImpl - selectReplyList
+-------------------------------------------------------------
+
+2023-05-02 14:41:30 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 3]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:30 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=500, limit=10, pageSize=10, maxPage=50, startPage=1, endPage=10, prevPage=1, nextPage=11], boardList=[edu.kh.comm.board.model.vo.Board@2db81d54, edu.kh.comm.board.model.vo.Board@2df334ab, edu.kh.comm.board.model.vo.Board@4ec00436, edu.kh.comm.board.model.vo.Board@5fa5f15d, edu.kh.comm.board.model.vo.Board@321a0540, edu.kh.comm.board.model.vo.Board@6f839c4, edu.kh.comm.board.model.vo.Board@48d77c99, edu.kh.comm.board.model.vo.Board@380843c7, edu.kh.comm.board.model.vo.Board@5ada6183, edu.kh.comm.board.model.vo.Board@1dab4505]}
+2023-05-02 14:41:30 [INFO] Running Time : 16ms
+2023-05-02 14:41:30 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 14:41:32 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardList
+Parameter : [1, 1]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:32 [INFO] Return Value : {pagination=Pagination [currentPage=1, listCount=1, limit=10, pageSize=10, maxPage=1, startPage=1, endPage=1, prevPage=1, nextPage=1], boardList=[edu.kh.comm.board.model.vo.Board@3db5593e]}
+2023-05-02 14:41:32 [INFO] Running Time : 8ms
+2023-05-02 14:41:32 [INFO] End : BoardServiceImpl - selectBoardList
+-------------------------------------------------------------
+
+2023-05-02 14:41:33 [INFO] -------------------------------------------------------------
+Start : BoardServiceImpl - selectBoardDetail
+Parameter : [501]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:33 [INFO] Return Value : edu.kh.comm.board.model.vo.BoardDetail@7ed5d138
+2023-05-02 14:41:33 [INFO] Running Time : 8ms
+2023-05-02 14:41:33 [INFO] End : BoardServiceImpl - selectBoardDetail
+-------------------------------------------------------------
+
+2023-05-02 14:41:33 [INFO] -------------------------------------------------------------
+Start : ReplyServiceImpl - selectReplyList
+Parameter : [501]
+ip : 0:0:0:0:0:0:0:1
+2023-05-02 14:41:33 [ERROR] <<exception>> : org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) - 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+### The error may exist in /mappers/reply-mapper.xml
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT LEVEL,  R.* FROM       (SELECT REPLY_NO, REPLY_CONTENT,           TO_CHAR(CREATE_DT, 'YYYY"년" MM"월" DD"일" HH24"시" MI"분" SS"초"') CREATE_DT,           BOARD_NO, MEMBER_NO, MEMBER_NICK, PROFILE_IMG, PARENT_REPLY_NO, REPLY_ST       FROM REPLY_S       JOIN MEMBER_S USING(MEMBER_NO)       WHERE BOARD_NO = ?) R      WHERE REPLY_ST = 'N'   START WITH PARENT_REPLY_NO IS NULL   CONNECT BY PRIOR REPLY_NO = PARENT_REPLY_NO   ORDER SIBLINGS BY REPLY_NO
+### Cause: java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: ORA-00942: 테이블 또는 뷰가 존재하지 않습니다
+
+
+2023-05-02 14:41:33 [INFO] End : ReplyServiceImpl - selectReplyList
+-------------------------------------------------------------
+

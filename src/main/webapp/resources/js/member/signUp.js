@@ -8,7 +8,7 @@ const checkObj = {
     "memberPwConfirm" : false,
     "memberNickname"  : false,
     "memberTel"       : false,
-//  "sendEmail"       : false   // 인증번호 발송 체크
+    //"sendEmail"       : false   // 인증번호 발송 체크
 };
 
 
@@ -90,7 +90,6 @@ memberEmail.addEventListener("input", function(){
             // data속성 : 비동기 통신 시 서버로 전달할 값을 작성(JS 객체 형식)
             // -> 비동기 통신 시 input에 입력된 값을
             //   "memberEmail" 이라는 key 값(파라미터)으로 전달
-
             type : "GET", // 데이터 전달 방식 type
 
             success : function(result){
@@ -113,11 +112,9 @@ memberEmail.addEventListener("input", function(){
                 }
             },
             
-            error : function(){
-                // 비동기 통신(ajax) 중 오류가 발생한 경우
-                console.log("에러 발생");
+            error : function(req, status, error){
+                console.log(req.responseText);
             }
-
         });
         
 
@@ -208,6 +205,7 @@ memberPw.addEventListener("input", function(){
     if(memberPw.value.length == 0){
         pwMessage.innerText = "영어, 숫자, 특수문자(!,@,#,-,_) 6~30글자 사이로 작성해주세요.";
         pwMessage.classList.remove("confirm", "error");
+
         checkObj.memberPw = false; // 유효 X 기록
         return;
     }
@@ -439,10 +437,7 @@ cBtn.addEventListener("click", function(){
 
 
 
-
-// 주소 api
-
-function findArr() {
+function sample4_execDaumPostcode() {
     new daum.Postcode({
         oncomplete: function(data) {
             // 팝업에서 검색결과 항목을 클릭했을때 실행할 코드를 작성하는 부분.
@@ -450,37 +445,12 @@ function findArr() {
             // 도로명 주소의 노출 규칙에 따라 주소를 표시한다.
             // 내려오는 변수가 값이 없는 경우엔 공백('')값을 가지므로, 이를 참고하여 분기 한다.
             var roadAddr = data.roadAddress; // 도로명 주소 변수
-            var extraRoadAddr = ''; // 참고 항목 변수
-
-            // 법정동명이 있을 경우 추가한다. (법정리는 제외)
-            // 법정동의 경우 마지막 문자가 "동/로/가"로 끝난다.
-            if(data.bname !== '' && /[동|로|가]$/g.test(data.bname)){
-                extraRoadAddr += data.bname;
-            }
-            // 건물명이 있고, 공동주택일 경우 추가한다.
-            if(data.buildingName !== '' && data.apartment === 'Y'){
-               extraRoadAddr += (extraRoadAddr !== '' ? ', ' + data.buildingName : data.buildingName);
-            }
-            // 표시할 참고항목이 있을 경우, 괄호까지 추가한 최종 문자열을 만든다.
-            if(extraRoadAddr !== ''){
-                extraRoadAddr = ' (' + extraRoadAddr + ')';
-            }
+           
 
             // 우편번호와 주소 정보를 해당 필드에 넣는다.
-            document.getElementById('zipCode').value = data.zonecode;
-            document.getElementById("memberAddress").value = roadAddr;
-            document.getElementById("detailAddress").value = data.jibunAddress;
+            document.getElementById('sample4_postcode').value = data.zonecode;
+            document.getElementById("sample4_roadAddress").value = roadAddr;
+
         }
     }).open();
 }
-
-
-
-
-// 회원 정보 조회 ajax
-
-// 버튼
-const select1 = document.getElementById("select1");
-// 인풋
-const in1 = document.getElementById("in1");
-
