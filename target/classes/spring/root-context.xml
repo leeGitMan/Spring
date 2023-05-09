@@ -83,8 +83,7 @@
 	</bean>
 
 	
-	<!-- <tx:annotation-driven proxy-target-class="true"/> -->
-	<tx:annotation-driven transaction-manager="transactionManager"/>
+	
 	
 	<!-- ======================================================================================================================= -->
 
