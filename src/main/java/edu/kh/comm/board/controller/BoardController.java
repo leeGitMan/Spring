@@ -24,7 +24,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import edu.kh.comm.board.model.service.BoardService;
+import edu.kh.comm.board.model.service.ReplyService;
 import edu.kh.comm.board.model.vo.BoardDetail;
+import edu.kh.comm.board.model.vo.Reply;
 import edu.kh.comm.common.Util;
 import edu.kh.comm.member.model.vo.Member;
 
@@ -35,6 +37,10 @@ public class BoardController {
 	
 	@Autowired
 	private BoardService service;
+	
+	@Autowired
+	private ReplyService rService;
+	
 	
 	
 	// 게시글 목록 조회
@@ -95,6 +101,9 @@ public class BoardController {
 		BoardDetail detail = service.selectBoardDetail(boardNo);
 		
 		
+		
+		
+		
 		// 쿠키를 이용한 조회수 중복 증가 방지 코드 + 본인의 글은 조회수 증가 X
 		
 		// @ModelAttribute("loginMember") Member loginMember (사용 불가)
@@ -110,6 +119,8 @@ public class BoardController {
 		if(detail != null) {
 			
 			// 댓글 목록 조회
+			List<Reply> rList = rService.selectReplyList(boardNo);
+			model.addAttribute("rList", rList);
 			
 			// 세션이 있는지 없는지
 			// 세션이 있으면 memberNo 세팅
@@ -277,6 +288,8 @@ public class BoardController {
 			return "redirect:" + path;
 		}
 	}
+	
+	
 	
 	
 	
