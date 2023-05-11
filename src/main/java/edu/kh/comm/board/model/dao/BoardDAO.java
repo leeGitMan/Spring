@@ -156,6 +156,13 @@ public class BoardDAO {
 		return sqlSession.insert("boardMapper.insertBoardImage", img);
 	}
 
+	/** BOARD_IMG 목록 조회(스케쥴 용)
+	 * @return dbList
+	 */
+	public List<String> selectDBList() {
+		return sqlSession.selectList("boardMapper.selectDBList");
+	}
+
 	
 
 	

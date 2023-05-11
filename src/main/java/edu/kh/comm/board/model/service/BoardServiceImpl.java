@@ -269,4 +269,12 @@ public class BoardServiceImpl implements BoardService{
 		}
 		return result;
 	}
+
+	/** BOARD_IMG 목록 조회(스케쥴 용)
+	 * return dbList
+	 */
+	@Override
+	public List<String> selectDBList() {
+		return dao.selectDBList();
+	}
 }

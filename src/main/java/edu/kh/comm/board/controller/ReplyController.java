@@ -55,9 +55,7 @@ public class ReplyController {
 	@PostMapping("/update")
 	public int updateReply(int replyNo, String replyContent) {
 		
-		int result = 0;
-		
-		result = service.updateReply(replyNo, replyContent);
+		int result = service.updateReply(replyNo, replyContent);
 		
 		return result;
 	}
@@ -67,8 +65,7 @@ public class ReplyController {
 	// 댓글 삭제
 	@GetMapping("/delete")
 	public int deleteReply(int replyNo) {
-		int result = 0;
-		result = service.deleteReply(replyNo);
+		int result = service.deleteReply(replyNo);
 		return result;
 	}
 	
