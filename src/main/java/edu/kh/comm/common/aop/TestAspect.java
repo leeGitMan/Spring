@@ -52,12 +52,5 @@ public class TestAspect {
 	@Pointcut("execution(* edu.kh.comm.member..*Impl.*(..))")
 	public void memberPointcut() {} // 내용 작성 X
 	
-	
-	
-	
-	
-	
-	
-	
 
 }
